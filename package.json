@@ -1,0 +1,14 @@
+{
+  "name": "linknest",
+  "version": "1.0.0",
+  "description": "LinkNest - A link management platform powered by Supabase",
+  "private": true,
+  "workspaces": ["client", "backend"],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=client",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:backend\""
+  },
+  "keywords": ["linknest", "links", "supabase"],
+  "license": "MIT"
+}
